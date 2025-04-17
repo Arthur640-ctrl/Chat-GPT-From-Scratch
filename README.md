@@ -48,8 +48,5 @@ After, you need to set a vocabulary. There are two options :
   *NOTE : When you load a file, you don't need to train the tokenizer*
 
 
-## Contact
-Pour toute question, contactez-nous à contact@exemple.com.
-
 
 
