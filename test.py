@@ -1,15 +1,14 @@
 from bpe_tokenizer.tokenizer import BPETokenizer
 
-vocab_size = 50  # Taille du vocabulaire
-tokenizer = BPETokenizer(vocab_size=vocab_size)
+corpus = ["bonjour tout le monde"]
+tokenizer = BPETokenizer(vocab_size=100)
+tokenizer.fit(corpus)
 
-tokenizer.load_vocab('vocab.json')
+text = "bonjour le monde"
+encoded = tokenizer.encode(text)
+decoded = tokenizer.decode(encoded)
 
-# Tester la méthode d'encodage
-texte = "le chat mange une pomme"
-encoded_text = tokenizer.encode(texte)
-print(f"Texte encodé : {encoded_text}")
+print("Texte encodé :", encoded)
+print("Texte décodé :", decoded)
 
-# Tester la méthode de décodage
-decoded_text = tokenizer.decode(encoded_text)
-print(f"Texte décodé : {decoded_text}")
+tokenizer.save_vocab('vocab.json')

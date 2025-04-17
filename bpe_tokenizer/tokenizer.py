@@ -131,8 +131,6 @@ class BPETokenizer:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(bpe_codes_str_keys, f, ensure_ascii=False, indent=2)
 
-
-
     def load_vocab(self, filename: str):
         """
         Charge un vocabulaire depuis un fichier JSON et reconvertit les clés en tuples.
@@ -145,7 +143,6 @@ class BPETokenizer:
         self.bpe_codes = {
             tuple(key.split("__SEP__")): value for key, value in bpe_codes_str_keys.items()
         }
-
 
     def pad_sequences(self, sequences: list[list[str]]) -> list[list[str]]:
         """
