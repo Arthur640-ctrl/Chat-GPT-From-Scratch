@@ -32,7 +32,7 @@ Variables :
 After, you need to set a vocabulary. There are two options :
   - If you start now, you need to create your vacabulary :
   ```python
-  corpus = ["Hey everyone !"]
+  corpus = ["Hello everyone, how are you today? Is the world doing well?"]
   ```
   In the list 'corpus', you need to put the entrainement text. Your vocabulary will be established based on what you put in the 'corpus, It is therefore advisable to include a lot of text to establish a large vocabulary. Then you need to train with this line : 
   ```python
@@ -48,6 +48,16 @@ After, you need to set a vocabulary. There are two options :
   tokenizer.load_vocab(filename)
   ```
   In 'filname', you need to put the name/path of the file.
+  
+After train the Tokenizer or load the vocabulary, you can encode or decode string.
+
+  For encode :
+  ```python
+  encoded = tokenizer.encode("Hello, word !")
+  ```
+
+
+
   
   *NOTE : When you load a file, you don't need to train the tokenizer*
 
