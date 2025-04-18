@@ -48,6 +48,7 @@ After, you need to set a vocabulary. There are two options :
   tokenizer.load_vocab(filename)
   ```
   In 'filname', you need to put the name/path of the file.
+*NOTE : When you load a file, you don't need to train the tokenizer*
   
 After train the Tokenizer or load the vocabulary, you can encode or decode string.
 
@@ -55,12 +56,9 @@ After train the Tokenizer or load the vocabulary, you can encode or decode strin
   ```python
   encoded = tokenizer.encode("Hello, word !")
   ```
+  *Note : If an élément is not in the vocabulary, there will be <UNK>*
 
-
-
-  
-  *NOTE : When you load a file, you don't need to train the tokenizer*
-
-
-
-
+  For decode :
+  ```python
+  decoded = tokenizer.decode(encoded)
+  ```
