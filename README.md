@@ -7,8 +7,12 @@ Chat-GPT-From-Scratch is a new IA homemade. The goal is for it to look like Chat
 - [Features](#features)
 
 ## Introduction
-Actuellement, il y a ces fonctionnalités :
-- [Byte Pair Encoding](./bpe_tokenizer/tokenizer.py)
+This project was made possible by this GitHub   [project](https://github.com/ThePixelCrafted/chatgpt_de_zero).
+
+Actually, there are : 
+- Tokenizer (BPE : Byte pair Encoding)
+Soon :
+- CHAT GPT architecture 
 
 ## Features
 All features :
