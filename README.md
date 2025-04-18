@@ -30,7 +30,7 @@ After, you need to set a vocabulary. There are two options :
   ```python
   corpus = ["Hey everyone !"]
   ```
-  In the list 'corpus', you need to put the entrainement text. Then you need to train with this line : 
+  In the list 'corpus', you need to put the entrainement text. Your vocabulary will be established based on what you put in the 'corpus, It is therefore advisable to include a lot of text to establish a large vocabulary. Then you need to train with this line : 
   ```python
   tokenizer.fit(corpus)
   ```
