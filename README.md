@@ -43,7 +43,7 @@ After, you need to set a vocabulary. There are two options :
   ```python
   tokenizer.load_vocab(filename)
   ```
-  In 'filnale', you need to put the name/path of the file.
+  In 'filname', you need to put the name/path of the file.
   
   *NOTE : When you load a file, you don't need to train the tokenizer*
 
